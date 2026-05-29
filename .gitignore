@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+.jupyter/
+
+# Data
+data/raw/**
+!data/raw/.gitkeep
+
+# Large generated files
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.sqlite
+*.db
+reports/figures/**
+!reports/figures/.gitkeep
+
+# OS and editor
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.vscode/
+.idea/
+
+# Secrets
+.env
+*.pem
+*.key
