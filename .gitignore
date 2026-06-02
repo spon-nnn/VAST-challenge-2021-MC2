@@ -32,9 +32,9 @@ data/raw/**
 reports/figures/**
 !reports/figures/.gitkeep
 !reports/figures/q1_*.png
-!reports/figures/q1_*.png
 !reports/figures/q2_*.png
 !reports/figures/q2_*（附加图）.png
+!reports/figures/q4_*.png
 
 # OS and editor
 .DS_Store
