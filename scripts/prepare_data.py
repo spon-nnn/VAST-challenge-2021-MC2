@@ -17,7 +17,6 @@ RAW_MC2_DIR = RAW_DATA_DIR / "MC2"
 RAW_ENCODING = "cp1252"
 
 SYSTEMATIC_PRICE_OFFSETS = (20.0, 24.0, 60.0, 80.0)
-
 LOCATION_CATEGORY = {
     "Abila Airport": "Transport",
     "Abila Scrapyard": "Industrial",
