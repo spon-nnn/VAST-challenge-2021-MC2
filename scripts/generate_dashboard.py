@@ -55,6 +55,9 @@ def main():
     centrality = read_csv("q4_centrality_stats.csv")
     cooc_details = read_csv("q4_cooccurrence_details.csv")
 
+    # Q5 相关
+    q5_scores = read_csv("q5_suspicious_location_scores.csv")
+
     # 聚合数据用于概览
     total_cc_txns = sum(1 for r in anomaly if r.get("source") == "cc")
     total_loyalty_txns = sum(1 for r in anomaly if r.get("source") == "loyalty")
@@ -139,6 +142,9 @@ def main():
     </a>
     <a href="#q4" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-r-lg text-sm" data-section="q4">
       <i class="fa fa-share-alt"></i> Q4 关系网络分析
+    </a>
+    <a href="#q5" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-r-lg text-sm" data-section="q5">
+      <i class="fa fa-exclamation-triangle"></i> Q5 可疑活动地点
     </a>
   </nav>
   <div class="mt-auto pt-4 border-t border-slate-700 text-xs text-slate-500">
@@ -384,6 +390,46 @@ def main():
     </div>
   </section>
 
+  <!-- ====== Q5 可疑活动地点分析 ====== -->
+  <section id="q5" class="section">
+    <h2 class="section-title"><i class="fa fa-exclamation-triangle mr-2"></i>Q5 可疑活动地点分析</h2>
+    <p class="text-slate-400 text-sm mb-4">综合经济异常、时间碰撞、POK 监视和网络裂隙四维度，评分并排序 10 处可疑活动地点</p>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+      <div class="card p-5">
+        <h3 class="text-sm font-semibold mb-3 text-slate-300">可疑地点综合评分 Top 10</h3>
+        <div class="chart-container" id="q5-scores"></div>
+      </div>
+      <div class="card p-5">
+        <h3 class="text-sm font-semibold mb-3 text-slate-300">四维度贡献堆叠图</h3>
+        <div class="chart-container" id="q5-stacked"></div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div class="card p-5">
+        <h3 class="text-sm font-semibold mb-3 text-slate-300">CC-Loyalty 系统性价格偏移</h3>
+        <div class="chart-container" id="q5-fraud"></div>
+      </div>
+      <div class="card p-5">
+        <h3 class="text-sm font-semibold mb-3 text-slate-300">Top 3 可疑地点证据卡片</h3>
+        <div class="space-y-3 mt-3" id="q5-cards"></div>
+      </div>
+    </div>
+
+    <div class="mt-4 card p-4">
+      <h4 class="text-sm font-semibold text-red-400 mb-2"><i class="fa fa-exclamation-triangle mr-1"></i>关键发现</h4>
+      <div class="text-sm text-slate-400 space-y-1">
+        <p>• <span class="text-red-400 font-semibold">Nationwide Refinery</span> 综合评分最高 (104.7)：33笔工业高价异常，总消费 $88,289</p>
+        <p>• <span class="text-red-400 font-semibold">Frydos Autosupply n' More</span> $10,000 极端交易，精确整数金额，无 loyalty 匹配</p>
+        <p>• <span class="text-orange-400 font-semibold">Kronos Mart</span> 5笔凌晨3:00交易，涉及 CFO Mark Adams 及 Nils Calixto 的卡片</p>
+        <p>• <span class="text-yellow-400">CC-Loyalty 系统性偏移</span>: 226对匹配存在 $20/$60/$80 固定偏移，CC 价格始终 > Loyalty 价格</p>
+        <p>• Nils Calixto 持有 <span class="text-purple-300">11张 Corporate 卡片</span>，9张 Unassigned Vehicle 卡无明确持有者</p>
+        <p>• Bertrand Ovan 涉及 <span class="text-pink-400">2/3 的深夜 GPS 共现</span>，是最关键的网络裂隙人物</p>
+      </div>
+    </div>
+  </section>
+
   <footer class="text-center text-xs text-slate-600 py-8 border-t border-slate-800">
     <p>VAST Challenge 2021 Mini-Challenge 2 · Kronos Incident Analysis</p>
     <p>GAStech · Kronos Island · January 6–19, 2014</p>
@@ -407,7 +453,8 @@ const DATA = {{
   netEdges: {csv_to_json(net_edges)},
   community: {csv_to_json(community)},
   centrality: {csv_to_json(centrality)},
-  coocDetails: {csv_to_json(cooc_details)}
+  coocDetails: {csv_to_json(cooc_details)},
+  q5Scores: {csv_to_json(q5_scores)}
 }};
 </script>
 
@@ -1206,6 +1253,105 @@ const DATA = {{
         {{ name: '非工作时段', type: 'bar', data: dates.map(d => eventsByDate.get(d).afterHours), itemStyle: {{ color: '#f59e0b' }} }},
         {{ name: '深夜(0-5点)', type: 'bar', data: dates.map(d => eventsByDate.get(d).night), itemStyle: {{ color: '#ef4444' }} }}
       ]
+    }});
+  }})();
+
+  // ---- Q5 可疑地点评分 ----
+  (function() {{
+    const chart = initChart('q5-scores');
+    if (!chart) return;
+
+    const catColors = {{ 'Industrial': '#b434eb', 'Transport': '#f97316', 'Retail': '#0e9f6e', 'Cafe': '#3b82f6' }};
+    const data = DATA.q5Scores.slice(0, 10).map(r => ({{
+      name: r.location.length > 28 ? r.location.slice(0, 26) + '...' : r.location,
+      value: +r.total_score,
+      itemStyle: {{ color: catColors[r.location_category] || '#64748b', borderRadius: [0, 6, 6, 0] }}
+    }})).reverse();
+
+    const allNames = DATA.q5Scores.slice(0, 10).map(r => r.location).reverse();
+
+    chart.setOption({{
+      ...darkTheme,
+      title: {{ text: 'Q5 可疑活动地点综合评分', left: 'center', textStyle: {{ color: '#e2e8f0', fontSize: 14 }} }},
+      tooltip: {{ trigger: 'axis', axisPointer: {{ type: 'shadow' }} }},
+      grid: {{ left: 200, right: 40, top: 40, bottom: 20 }},
+      xAxis: {{ type: 'value', name: '综合评分' }},
+      yAxis: {{ type: 'category', data: allNames, axisLabel: {{ fontSize: 9, width: 180, overflow: 'truncate' }}, inverse: true }},
+      series: [{{ type: 'bar', data: data, label: {{ show: true, position: 'right', fontSize: 10, formatter: '{{c}}' }} }}]
+    }});
+  }})();
+
+  // ---- Q5 四维度贡献堆叠图 ----
+  (function() {{
+    const chart = initChart('q5-stacked');
+    if (!chart) return;
+
+    const top6 = DATA.q5Scores.slice(0, 6);
+    const names = top6.map(r => r.location.length > 22 ? r.location.slice(0, 20) + '...' : r.location);
+
+    chart.setOption({{
+      ...darkTheme,
+      title: {{ text: '四维度异常贡献分解 (Top 6)', left: 'center', textStyle: {{ color: '#e2e8f0', fontSize: 14 }} }},
+      tooltip: {{ trigger: 'axis', axisPointer: {{ type: 'shadow' }} }},
+      legend: {{ data: ['经济异常', '时间碰撞', 'POK监视', '网络裂隙'], bottom: 0 }},
+      grid: {{ left: 180, right: 20, top: 40, bottom: 40 }},
+      xAxis: {{ type: 'value', name: '评分贡献' }},
+      yAxis: {{ type: 'category', data: names.reverse(), axisLabel: {{ fontSize: 9, width: 160, overflow: 'truncate' }}, inverse: true }},
+      series: [
+        {{ name: '经济异常', type: 'bar', stack: 'total', data: top6.map(r => +r.economic).reverse(), itemStyle: {{ color: '#e02424' }} }},
+        {{ name: '时间碰撞', type: 'bar', stack: 'total', data: top6.map(r => +r.temporal).reverse(), itemStyle: {{ color: '#7c3aed' }} }},
+        {{ name: 'POK监视', type: 'bar', stack: 'total', data: top6.map(r => +r.pok_surveillance).reverse(), itemStyle: {{ color: '#f97316' }} }},
+        {{ name: '网络裂隙', type: 'bar', stack: 'total', data: top6.map(r => +r.network_cleavage).reverse(), itemStyle: {{ color: '#f59e0b' }} }}
+      ]
+    }});
+  }})();
+
+  // ---- Q5 CC-Loyalty 偏移 ----
+  (function() {{
+    const chart = initChart('q5-fraud');
+    if (!chart) return;
+
+    chart.setOption({{
+      ...darkTheme,
+      title: {{ text: 'CC-Loyalty 价格偏移模式', left: 'center', textStyle: {{ color: '#e2e8f0', fontSize: 14 }} }},
+      tooltip: {{ trigger: 'item', formatter: '{{b}}: {{c}} 对 ({{d}}%)' }},
+      series: [{{
+        type: 'pie',
+        radius: ['45%', '75%'],
+        center: ['50%', '50%'],
+        roseType: 'area',
+        itemStyle: {{ borderRadius: 6, borderColor: '#0f172a', borderWidth: 2 }},
+        label: {{ color: '#94a3b8', formatter: '{{b}}\\n{{c}} 对' }},
+        data: [
+          {{ value: 1081, name: '精确匹配 ($0差异)', itemStyle: {{ color: '#10b981' }} }},
+          {{ value: 56, name: '$80 固定偏移', itemStyle: {{ color: '#ef4444' }} }},
+          {{ value: 56, name: '$60 固定偏移', itemStyle: {{ color: '#f59e0b' }} }},
+          {{ value: 46, name: '$20 固定偏移', itemStyle: {{ color: '#f97316' }} }},
+          {{ value: 56, name: '小数部分偏移', itemStyle: {{ color: '#8b5cf6' }} }},
+          {{ value: 12, name: '近似匹配', itemStyle: {{ color: '#64748b' }} }}
+        ]
+      }}]
+    }});
+  }})();
+
+  // ---- Q5 证据卡片 ----
+  (function() {{
+    const container = document.getElementById('q5-cards');
+    if (!container) return;
+    const top3 = DATA.q5Scores.slice(0, 3);
+    const emojis = ['🔴', '🟠', '🟡'];
+    top3.forEach((r, i) => {{
+      container.innerHTML += `
+        <div class="bg-slate-800/50 rounded-lg p-3 border border-slate-700">
+          <div class="flex items-center justify-between mb-1">
+            <span class="font-semibold text-sm text-slate-200">${{emojis[i]}} ${{r.location}}</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-slate-700">${{r.location_category}}</span>
+          </div>
+          <div class="text-xs text-slate-400 space-y-0.5">
+            <div>📊 综合评分: <span class="text-red-400 font-bold">${{(+r.total_score).toFixed(1)}}</span></div>
+            <div>💰 经济: ${{(+r.economic).toFixed(0)}} | 🌙 时间: ${{(+r.temporal).toFixed(0)}} | 🚗 POK: ${{(+r.pok_surveillance).toFixed(0)}} | 🕸 网络: ${{(+r.network_cleavage).toFixed(0)}}</div>
+          </div>
+        </div>`;
     }});
   }})();
 
