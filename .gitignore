@@ -34,6 +34,7 @@ reports/figures/**
 !reports/figures/q1_*.png
 !reports/figures/q2_*.png
 !reports/figures/q2_*（附加图）.png
+!reports/figures/q3_*.png
 
 # OS and editor
 .DS_Store
