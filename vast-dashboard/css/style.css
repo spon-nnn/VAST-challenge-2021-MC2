@@ -1,0 +1,321 @@
+/* ═══════════════════════════════════════════════════════════
+   style.css — 清爽学术风 (Clean Academic)
+   ═══════════════════════════════════════════════════════════ */
+
+:root {
+    --bg: #f0f4f8;
+    --card-bg: #ffffff;
+    --border: #e2e8f0;
+    --text: #1e293b;
+    --text-secondary: #64748b;
+    --accent: #3b82f6;
+    --accent-strong: #2563eb;
+    --danger: #dc2626;
+    --warning: #f59e0b;
+    --success: #10b981;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    --radius: 8px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    background-color: var(--bg);
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: var(--text);
+    line-height: 1.5;
+}
+
+/* ── 整体容器 ── */
+.dashboard {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 24px 20px 80px;
+}
+
+/* ── 标题 ── */
+.header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+.header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0 0 4px;
+}
+.header .subtitle {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+/* ── 指标面板 ── */
+.metrics {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+.metric-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px 20px;
+    min-width: 100px;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+.metric-card .value {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.metric-card .label {
+    font-size: 0.72rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 2px;
+}
+.metric-card.danger .value { color: var(--danger); }
+.metric-card.warning .value { color: var(--warning); }
+.metric-card.accent .value { color: var(--accent); }
+.metric-card.success .value { color: var(--success); }
+
+/* ── 分区标题 ── */
+.section {
+    margin-bottom: 32px;
+}
+.section-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0f172a;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.section-title .badge {
+    font-size: 0.7rem;
+    background: var(--accent);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+}
+
+/* ── 图表行 ── */
+.chart-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+.chart-row.full { flex-direction: column; }
+.chart-half {
+    flex: 1;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 12px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+.chart-full {
+    width: 100%;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 12px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+.chart-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+/* ── SVG 容器 ── */
+.svg-responsive {
+    width: 100%;
+    display: block;
+}
+
+/* ── 桑基图 ── */
+#sankey_svg {
+    width: 100%;
+    display: block;
+}
+.sankey-scroll {
+    height: 420px;
+    overflow-y: scroll;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: #f8fafc;
+}
+
+/* ── 环形柱状图 ── */
+#circular_bar_svg {
+    width: 100%;
+    min-height: 520px;
+    display: block;
+}
+
+/* ── 环形时间图 ── */
+#ring_svg {
+    width: 100%;
+    min-height: 520px;
+    display: block;
+}
+
+/* ── 地图 ── */
+#map_svg {
+    width: 75%;
+    height: 560px;
+    display: block;
+    float: left;
+}
+#map_cars {
+    width: 100%;
+    height: 1100px;
+    display: block;
+    overflow-y: scroll;
+    background: #f8fafc;
+    border-radius: 6px;
+}
+#map_car_div {
+    width: 24%;
+    height: 500px;
+    float: right;
+    overflow-y: scroll;
+    border-left: 1px solid var(--border);
+    padding-left: 10px;
+}
+
+/* ── 箱线图 ── */
+#box_plot_svg {
+    width: 100%;
+    min-height: 520px;
+    display: block;
+}
+
+/* ── 网络图 ── */
+#network_svg {
+    width: 100%;
+    min-height: 480px;
+    display: block;
+}
+
+/* ── CC-Loyalty 偏移图 ── */
+#offset_svg {
+    width: 100%;
+    min-height: 400px;
+    display: block;
+}
+
+/* ── 控制面板 ── */
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+.controls label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+.controls select, .controls input {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: white;
+}
+.controls button {
+    font-size: 0.8rem;
+    padding: 6px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    background: var(--accent);
+    color: white;
+    transition: background 0.2s;
+}
+.controls button:hover { background: var(--accent-strong); }
+.controls button.outline {
+    background: white;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+}
+.controls button.outline:hover { background: #eff6ff; }
+
+/* ── 图例 ── */
+.legend-row {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+    font-size: 0.75rem;
+}
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.legend-swatch {
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* ── Tooltip ── */
+.tooltip {
+    pointer-events: none;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+/* ── 滚动条 ── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+
+/* ── 表格 ── */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.75rem;
+}
+table th {
+    background: #f1f5f9;
+    color: var(--text);
+    padding: 6px 8px;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid var(--border);
+}
+table td {
+    padding: 5px 8px;
+    border-bottom: 1px solid #f1f5f9;
+}
+table tbody tr:hover { background: #f8fafc; }
+
+/* ── 响应式 ── */
+@media (max-width: 900px) {
+    .chart-row { flex-direction: column; }
+    #map_svg { width: 100%; float: none; }
+    #map_car_div { width: 100%; float: none; height: 300px; }
+}

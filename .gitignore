@@ -54,3 +54,4 @@ $RECYCLE.BIN/
 .env
 *.pem
 *.key
+node_modules/

@@ -1,0 +1,206 @@
+[
+  {
+    "location": "Katerina's Cafe",
+    "cc_count": 212,
+    "loyalty_count": 195,
+    "suspicious_score": 0
+  },
+  {
+    "location": "Hippokampos",
+    "cc_count": 171,
+    "loyalty_count": 155,
+    "suspicious_score": 0
+  },
+  {
+    "location": "Guy's Gyros",
+    "cc_count": 158,
+    "loyalty_count": 146,
+    "suspicious_score": 0
+  },
+  {
+    "location": "Brew've Been Served",
+    "cc_count": 156,
+    "loyalty_count": 140,
+    "suspicious_score": 0
+  },
+  {
+    "location": "Hallowed Grounds",
+    "cc_count": 92,
+    "loyalty_count": 80,
+    "suspicious_score": 0
+  },
+  {
+    "location": "Ouzeri Elian",
+    "cc_count": 87,
+    "loyalty_count": 84,
+    "suspicious_score": 0
+  },
+  {
+    "location": "Abila Zacharo",
+    "cc_count": 72,
+    "loyalty_count": 71,
+    "suspicious_score": 0
+  },
+  {
+    "location": "Kalami Kafenion",
+    "cc_count": 64,
+    "loyalty_count": 66,
+    "suspicious_score": 0
+  },
+  {
+    "location": "Gelatogalore",
+    "cc_count": 64,
+    "loyalty_count": 60,
+    "suspicious_score": 0
+  },
+  {
+    "location": "Bean There Done That",
+    "cc_count": 47,
+    "loyalty_count": 45,
+    "suspicious_score": 0
+  },
+  {
+    "location": "Frydos Autosupply n' More",
+    "cc_count": 47,
+    "loyalty_count": 42,
+    "suspicious_score": 18.0
+  },
+  {
+    "location": "Coffee Cameleon",
+    "cc_count": 38,
+    "loyalty_count": 37,
+    "suspicious_score": 0
+  },
+  {
+    "location": "Jack's Magical Beans",
+    "cc_count": 37,
+    "loyalty_count": 35,
+    "suspicious_score": 0
+  },
+  {
+    "location": "Brewed Awakenings",
+    "cc_count": 30,
+    "loyalty_count": 29,
+    "suspicious_score": 0
+  },
+  {
+    "location": "Abila Airport",
+    "cc_count": 25,
+    "loyalty_count": 26,
+    "suspicious_score": 83.9
+  },
+  {
+    "location": "Albert's Fine Clothing",
+    "cc_count": 25,
+    "loyalty_count": 25,
+    "suspicious_score": 8.7
+  },
+  {
+    "location": "Nationwide Refinery",
+    "cc_count": 24,
+    "loyalty_count": 23,
+    "suspicious_score": 104.7
+  },
+  {
+    "location": "Carlyle Chemical Inc.",
+    "cc_count": 19,
+    "loyalty_count": 19,
+    "suspicious_score": 83.7
+  },
+  {
+    "location": "Shoppers' Delight",
+    "cc_count": 20,
+    "loyalty_count": 18,
+    "suspicious_score": 0
+  },
+  {
+    "location": "Stewart and Sons Fabrication",
+    "cc_count": 18,
+    "loyalty_count": 17,
+    "suspicious_score": 83.6
+  },
+  {
+    "location": "General Grocer",
+    "cc_count": 10,
+    "loyalty_count": 12,
+    "suspicious_score": 0
+  },
+  {
+    "location": "Kronos Mart",
+    "cc_count": 10,
+    "loyalty_count": 8,
+    "suspicious_score": 9.1
+  },
+  {
+    "location": "Coffee Shack",
+    "cc_count": 8,
+    "loyalty_count": 9,
+    "suspicious_score": 0
+  },
+  {
+    "location": "Chostus Hotel",
+    "cc_count": 9,
+    "loyalty_count": 8,
+    "suspicious_score": 0
+  },
+  {
+    "location": "Desafio Golf Course",
+    "cc_count": 8,
+    "loyalty_count": 8,
+    "suspicious_score": 0
+  },
+  {
+    "location": "Roberts and Sons",
+    "cc_count": 8,
+    "loyalty_count": 6,
+    "suspicious_score": 0
+  },
+  {
+    "location": "Kronos Pipe and Irrigation",
+    "cc_count": 6,
+    "loyalty_count": 6,
+    "suspicious_score": 29.1
+  },
+  {
+    "location": "Maximum Iron and Steel",
+    "cc_count": 6,
+    "loyalty_count": 6,
+    "suspicious_score": 35.2
+  },
+  {
+    "location": "Ahaggo Museum",
+    "cc_count": 6,
+    "loyalty_count": 6,
+    "suspicious_score": 0
+  },
+  {
+    "location": "Abila Scrapyard",
+    "cc_count": 4,
+    "loyalty_count": 4,
+    "suspicious_score": 28.9
+  },
+  {
+    "location": "Octavio's Office Supplies",
+    "cc_count": 4,
+    "loyalty_count": 3,
+    "suspicious_score": 0
+  },
+  {
+    "location": "Frank's Fuel",
+    "cc_count": 2,
+    "loyalty_count": 2,
+    "suspicious_score": 0
+  },
+  {
+    "location": "U-Pump",
+    "cc_count": 2,
+    "loyalty_count": 1,
+    "suspicious_score": 0
+  },
+  {
+    "location": "Daily Dealz",
+    "cc_count": 1,
+    "loyalty_count": 0,
+    "suspicious_score": 0
+  }
+]

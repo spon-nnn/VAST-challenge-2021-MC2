@@ -1,0 +1,2189 @@
+{
+  "nodes": [
+    {
+      "name": "car_1",
+      "prefix": "car",
+      "clean_name": "1",
+      "vehicle_id": "1"
+    },
+    {
+      "name": "car_10",
+      "prefix": "car",
+      "clean_name": "10",
+      "vehicle_id": "10"
+    },
+    {
+      "name": "car_101",
+      "prefix": "car",
+      "clean_name": "101",
+      "vehicle_id": "101"
+    },
+    {
+      "name": "car_104",
+      "prefix": "car",
+      "clean_name": "104",
+      "vehicle_id": "104"
+    },
+    {
+      "name": "car_105",
+      "prefix": "car",
+      "clean_name": "105",
+      "vehicle_id": "105"
+    },
+    {
+      "name": "car_106",
+      "prefix": "car",
+      "clean_name": "106",
+      "vehicle_id": "106"
+    },
+    {
+      "name": "car_107",
+      "prefix": "car",
+      "clean_name": "107",
+      "vehicle_id": "107"
+    },
+    {
+      "name": "car_11",
+      "prefix": "car",
+      "clean_name": "11",
+      "vehicle_id": "11"
+    },
+    {
+      "name": "car_12",
+      "prefix": "car",
+      "clean_name": "12",
+      "vehicle_id": "12"
+    },
+    {
+      "name": "car_13",
+      "prefix": "car",
+      "clean_name": "13",
+      "vehicle_id": "13"
+    },
+    {
+      "name": "car_15",
+      "prefix": "car",
+      "clean_name": "15",
+      "vehicle_id": "15"
+    },
+    {
+      "name": "car_17",
+      "prefix": "car",
+      "clean_name": "17",
+      "vehicle_id": "17"
+    },
+    {
+      "name": "car_18",
+      "prefix": "car",
+      "clean_name": "18",
+      "vehicle_id": "18"
+    },
+    {
+      "name": "car_19",
+      "prefix": "car",
+      "clean_name": "19",
+      "vehicle_id": "19"
+    },
+    {
+      "name": "car_2",
+      "prefix": "car",
+      "clean_name": "2",
+      "vehicle_id": "2"
+    },
+    {
+      "name": "car_21",
+      "prefix": "car",
+      "clean_name": "21",
+      "vehicle_id": "21"
+    },
+    {
+      "name": "car_22",
+      "prefix": "car",
+      "clean_name": "22",
+      "vehicle_id": "22"
+    },
+    {
+      "name": "car_23",
+      "prefix": "car",
+      "clean_name": "23",
+      "vehicle_id": "23"
+    },
+    {
+      "name": "car_24",
+      "prefix": "car",
+      "clean_name": "24",
+      "vehicle_id": "24"
+    },
+    {
+      "name": "car_25",
+      "prefix": "car",
+      "clean_name": "25",
+      "vehicle_id": "25"
+    },
+    {
+      "name": "car_26",
+      "prefix": "car",
+      "clean_name": "26",
+      "vehicle_id": "26"
+    },
+    {
+      "name": "car_27",
+      "prefix": "car",
+      "clean_name": "27",
+      "vehicle_id": "27"
+    },
+    {
+      "name": "car_29",
+      "prefix": "car",
+      "clean_name": "29",
+      "vehicle_id": "29"
+    },
+    {
+      "name": "car_3",
+      "prefix": "car",
+      "clean_name": "3",
+      "vehicle_id": "3"
+    },
+    {
+      "name": "car_30",
+      "prefix": "car",
+      "clean_name": "30",
+      "vehicle_id": "30"
+    },
+    {
+      "name": "car_32",
+      "prefix": "car",
+      "clean_name": "32",
+      "vehicle_id": "32"
+    },
+    {
+      "name": "car_33",
+      "prefix": "car",
+      "clean_name": "33",
+      "vehicle_id": "33"
+    },
+    {
+      "name": "car_34",
+      "prefix": "car",
+      "clean_name": "34",
+      "vehicle_id": "34"
+    },
+    {
+      "name": "car_35",
+      "prefix": "car",
+      "clean_name": "35",
+      "vehicle_id": "35"
+    },
+    {
+      "name": "car_4",
+      "prefix": "car",
+      "clean_name": "4",
+      "vehicle_id": "4"
+    },
+    {
+      "name": "car_5",
+      "prefix": "car",
+      "clean_name": "5",
+      "vehicle_id": "5"
+    },
+    {
+      "name": "car_6",
+      "prefix": "car",
+      "clean_name": "6",
+      "vehicle_id": "6"
+    },
+    {
+      "name": "car_7",
+      "prefix": "car",
+      "clean_name": "7",
+      "vehicle_id": "7"
+    },
+    {
+      "name": "car_8",
+      "prefix": "car",
+      "clean_name": "8",
+      "vehicle_id": "8"
+    },
+    {
+      "name": "cc_CC_1286",
+      "prefix": "cc",
+      "clean_name": "CC_1286"
+    },
+    {
+      "name": "cc_CC_1310",
+      "prefix": "cc",
+      "clean_name": "CC_1310"
+    },
+    {
+      "name": "cc_CC_1321",
+      "prefix": "cc",
+      "clean_name": "CC_1321"
+    },
+    {
+      "name": "cc_CC_1415",
+      "prefix": "cc",
+      "clean_name": "CC_1415"
+    },
+    {
+      "name": "cc_CC_1874",
+      "prefix": "cc",
+      "clean_name": "CC_1874"
+    },
+    {
+      "name": "cc_CC_1877",
+      "prefix": "cc",
+      "clean_name": "CC_1877"
+    },
+    {
+      "name": "cc_CC_2142",
+      "prefix": "cc",
+      "clean_name": "CC_2142"
+    },
+    {
+      "name": "cc_CC_2276",
+      "prefix": "cc",
+      "clean_name": "CC_2276"
+    },
+    {
+      "name": "cc_CC_2418",
+      "prefix": "cc",
+      "clean_name": "CC_2418"
+    },
+    {
+      "name": "cc_CC_2463",
+      "prefix": "cc",
+      "clean_name": "CC_2463"
+    },
+    {
+      "name": "cc_CC_2540",
+      "prefix": "cc",
+      "clean_name": "CC_2540"
+    },
+    {
+      "name": "cc_CC_2681",
+      "prefix": "cc",
+      "clean_name": "CC_2681"
+    },
+    {
+      "name": "cc_CC_3484",
+      "prefix": "cc",
+      "clean_name": "CC_3484"
+    },
+    {
+      "name": "cc_CC_3492",
+      "prefix": "cc",
+      "clean_name": "CC_3492"
+    },
+    {
+      "name": "cc_CC_3506",
+      "prefix": "cc",
+      "clean_name": "CC_3506"
+    },
+    {
+      "name": "cc_CC_3547",
+      "prefix": "cc",
+      "clean_name": "CC_3547"
+    },
+    {
+      "name": "cc_CC_3853",
+      "prefix": "cc",
+      "clean_name": "CC_3853"
+    },
+    {
+      "name": "cc_CC_4434",
+      "prefix": "cc",
+      "clean_name": "CC_4434"
+    },
+    {
+      "name": "cc_CC_4530",
+      "prefix": "cc",
+      "clean_name": "CC_4530"
+    },
+    {
+      "name": "cc_CC_4795",
+      "prefix": "cc",
+      "clean_name": "CC_4795"
+    },
+    {
+      "name": "cc_CC_4948",
+      "prefix": "cc",
+      "clean_name": "CC_4948"
+    },
+    {
+      "name": "cc_CC_5010",
+      "prefix": "cc",
+      "clean_name": "CC_5010"
+    },
+    {
+      "name": "cc_CC_5368",
+      "prefix": "cc",
+      "clean_name": "CC_5368"
+    },
+    {
+      "name": "cc_CC_5407",
+      "prefix": "cc",
+      "clean_name": "CC_5407"
+    },
+    {
+      "name": "cc_CC_5921",
+      "prefix": "cc",
+      "clean_name": "CC_5921"
+    },
+    {
+      "name": "cc_CC_6691",
+      "prefix": "cc",
+      "clean_name": "CC_6691"
+    },
+    {
+      "name": "cc_CC_6816",
+      "prefix": "cc",
+      "clean_name": "CC_6816"
+    },
+    {
+      "name": "cc_CC_6895",
+      "prefix": "cc",
+      "clean_name": "CC_6895"
+    },
+    {
+      "name": "cc_CC_6899",
+      "prefix": "cc",
+      "clean_name": "CC_6899"
+    },
+    {
+      "name": "cc_CC_6901",
+      "prefix": "cc",
+      "clean_name": "CC_6901"
+    },
+    {
+      "name": "cc_CC_7108",
+      "prefix": "cc",
+      "clean_name": "CC_7108"
+    },
+    {
+      "name": "cc_CC_7117",
+      "prefix": "cc",
+      "clean_name": "CC_7117"
+    },
+    {
+      "name": "cc_CC_7253",
+      "prefix": "cc",
+      "clean_name": "CC_7253"
+    },
+    {
+      "name": "cc_CC_7354",
+      "prefix": "cc",
+      "clean_name": "CC_7354"
+    },
+    {
+      "name": "cc_CC_7384",
+      "prefix": "cc",
+      "clean_name": "CC_7384"
+    },
+    {
+      "name": "cc_CC_7688",
+      "prefix": "cc",
+      "clean_name": "CC_7688"
+    },
+    {
+      "name": "cc_CC_7792",
+      "prefix": "cc",
+      "clean_name": "CC_7792"
+    },
+    {
+      "name": "cc_CC_7819",
+      "prefix": "cc",
+      "clean_name": "CC_7819"
+    },
+    {
+      "name": "cc_CC_7889",
+      "prefix": "cc",
+      "clean_name": "CC_7889"
+    },
+    {
+      "name": "cc_CC_8129",
+      "prefix": "cc",
+      "clean_name": "CC_8129"
+    },
+    {
+      "name": "cc_CC_8156",
+      "prefix": "cc",
+      "clean_name": "CC_8156"
+    },
+    {
+      "name": "cc_CC_8202",
+      "prefix": "cc",
+      "clean_name": "CC_8202"
+    },
+    {
+      "name": "cc_CC_8332",
+      "prefix": "cc",
+      "clean_name": "CC_8332"
+    },
+    {
+      "name": "cc_CC_8411",
+      "prefix": "cc",
+      "clean_name": "CC_8411"
+    },
+    {
+      "name": "cc_CC_8642",
+      "prefix": "cc",
+      "clean_name": "CC_8642"
+    },
+    {
+      "name": "cc_CC_9152",
+      "prefix": "cc",
+      "clean_name": "CC_9152"
+    },
+    {
+      "name": "cc_CC_9220",
+      "prefix": "cc",
+      "clean_name": "CC_9220"
+    },
+    {
+      "name": "cc_CC_9241",
+      "prefix": "cc",
+      "clean_name": "CC_9241"
+    },
+    {
+      "name": "cc_CC_9405",
+      "prefix": "cc",
+      "clean_name": "CC_9405"
+    },
+    {
+      "name": "cc_CC_9551",
+      "prefix": "cc",
+      "clean_name": "CC_9551"
+    },
+    {
+      "name": "cc_CC_9614",
+      "prefix": "cc",
+      "clean_name": "CC_9614"
+    },
+    {
+      "name": "cc_CC_9617",
+      "prefix": "cc",
+      "clean_name": "CC_9617"
+    },
+    {
+      "name": "cc_CC_9635",
+      "prefix": "cc",
+      "clean_name": "CC_9635"
+    },
+    {
+      "name": "cc_CC_9683",
+      "prefix": "cc",
+      "clean_name": "CC_9683"
+    },
+    {
+      "name": "cc_CC_9735",
+      "prefix": "cc",
+      "clean_name": "CC_9735"
+    },
+    {
+      "name": "cc_L1107",
+      "prefix": "cc",
+      "clean_name": "L1107"
+    },
+    {
+      "name": "cc_L1485",
+      "prefix": "cc",
+      "clean_name": "L1485"
+    },
+    {
+      "name": "cc_L1682",
+      "prefix": "cc",
+      "clean_name": "L1682"
+    },
+    {
+      "name": "cc_L2070",
+      "prefix": "cc",
+      "clean_name": "L2070"
+    },
+    {
+      "name": "cc_L2169",
+      "prefix": "cc",
+      "clean_name": "L2169"
+    },
+    {
+      "name": "cc_L2247",
+      "prefix": "cc",
+      "clean_name": "L2247"
+    },
+    {
+      "name": "cc_L2343",
+      "prefix": "cc",
+      "clean_name": "L2343"
+    },
+    {
+      "name": "cc_L2459",
+      "prefix": "cc",
+      "clean_name": "L2459"
+    },
+    {
+      "name": "cc_L2490",
+      "prefix": "cc",
+      "clean_name": "L2490"
+    },
+    {
+      "name": "cc_L2769",
+      "prefix": "cc",
+      "clean_name": "L2769"
+    },
+    {
+      "name": "cc_L3014",
+      "prefix": "cc",
+      "clean_name": "L3014"
+    },
+    {
+      "name": "cc_L3191",
+      "prefix": "cc",
+      "clean_name": "L3191"
+    },
+    {
+      "name": "cc_L3259",
+      "prefix": "cc",
+      "clean_name": "L3259"
+    },
+    {
+      "name": "cc_L3288",
+      "prefix": "cc",
+      "clean_name": "L3288"
+    },
+    {
+      "name": "cc_L3295",
+      "prefix": "cc",
+      "clean_name": "L3295"
+    },
+    {
+      "name": "cc_L3317",
+      "prefix": "cc",
+      "clean_name": "L3317"
+    },
+    {
+      "name": "cc_L3366",
+      "prefix": "cc",
+      "clean_name": "L3366"
+    },
+    {
+      "name": "cc_L3572",
+      "prefix": "cc",
+      "clean_name": "L3572"
+    },
+    {
+      "name": "cc_L3800",
+      "prefix": "cc",
+      "clean_name": "L3800"
+    },
+    {
+      "name": "cc_L4034",
+      "prefix": "cc",
+      "clean_name": "L4034"
+    },
+    {
+      "name": "cc_L4063",
+      "prefix": "cc",
+      "clean_name": "L4063"
+    },
+    {
+      "name": "cc_L4149",
+      "prefix": "cc",
+      "clean_name": "L4149"
+    },
+    {
+      "name": "cc_L4164",
+      "prefix": "cc",
+      "clean_name": "L4164"
+    },
+    {
+      "name": "cc_L4424",
+      "prefix": "cc",
+      "clean_name": "L4424"
+    },
+    {
+      "name": "cc_L5224",
+      "prefix": "cc",
+      "clean_name": "L5224"
+    },
+    {
+      "name": "cc_L5259",
+      "prefix": "cc",
+      "clean_name": "L5259"
+    },
+    {
+      "name": "cc_L5485",
+      "prefix": "cc",
+      "clean_name": "L5485"
+    },
+    {
+      "name": "cc_L5553",
+      "prefix": "cc",
+      "clean_name": "L5553"
+    },
+    {
+      "name": "cc_L5756",
+      "prefix": "cc",
+      "clean_name": "L5756"
+    },
+    {
+      "name": "cc_L5777",
+      "prefix": "cc",
+      "clean_name": "L5777"
+    },
+    {
+      "name": "cc_L5924",
+      "prefix": "cc",
+      "clean_name": "L5924"
+    },
+    {
+      "name": "cc_L5947",
+      "prefix": "cc",
+      "clean_name": "L5947"
+    },
+    {
+      "name": "cc_L6110",
+      "prefix": "cc",
+      "clean_name": "L6110"
+    },
+    {
+      "name": "cc_L6119",
+      "prefix": "cc",
+      "clean_name": "L6119"
+    },
+    {
+      "name": "cc_L6267",
+      "prefix": "cc",
+      "clean_name": "L6267"
+    },
+    {
+      "name": "cc_L6417",
+      "prefix": "cc",
+      "clean_name": "L6417"
+    },
+    {
+      "name": "cc_L6544",
+      "prefix": "cc",
+      "clean_name": "L6544"
+    },
+    {
+      "name": "cc_L6886",
+      "prefix": "cc",
+      "clean_name": "L6886"
+    },
+    {
+      "name": "cc_L7291",
+      "prefix": "cc",
+      "clean_name": "L7291"
+    },
+    {
+      "name": "cc_L7761",
+      "prefix": "cc",
+      "clean_name": "L7761"
+    },
+    {
+      "name": "cc_L7783",
+      "prefix": "cc",
+      "clean_name": "L7783"
+    },
+    {
+      "name": "cc_L7814",
+      "prefix": "cc",
+      "clean_name": "L7814"
+    },
+    {
+      "name": "cc_L8012",
+      "prefix": "cc",
+      "clean_name": "L8012"
+    },
+    {
+      "name": "cc_L8148",
+      "prefix": "cc",
+      "clean_name": "L8148"
+    },
+    {
+      "name": "cc_L8328",
+      "prefix": "cc",
+      "clean_name": "L8328"
+    },
+    {
+      "name": "cc_L8477",
+      "prefix": "cc",
+      "clean_name": "L8477"
+    },
+    {
+      "name": "cc_L8566",
+      "prefix": "cc",
+      "clean_name": "L8566"
+    },
+    {
+      "name": "cc_L9018",
+      "prefix": "cc",
+      "clean_name": "L9018"
+    },
+    {
+      "name": "cc_L9254",
+      "prefix": "cc",
+      "clean_name": "L9254"
+    },
+    {
+      "name": "cc_L9362",
+      "prefix": "cc",
+      "clean_name": "L9362"
+    },
+    {
+      "name": "cc_L9363",
+      "prefix": "cc",
+      "clean_name": "L9363"
+    },
+    {
+      "name": "cc_L9406",
+      "prefix": "cc",
+      "clean_name": "L9406"
+    },
+    {
+      "name": "cc_L9633",
+      "prefix": "cc",
+      "clean_name": "L9633"
+    },
+    {
+      "name": "cc_L9637",
+      "prefix": "cc",
+      "clean_name": "L9637"
+    },
+    {
+      "name": "loyalty_L1107",
+      "prefix": "loyalty",
+      "clean_name": "L1107",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L1485",
+      "prefix": "loyalty",
+      "clean_name": "L1485",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L1682",
+      "prefix": "loyalty",
+      "clean_name": "L1682",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L2070",
+      "prefix": "loyalty",
+      "clean_name": "L2070",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L2169",
+      "prefix": "loyalty",
+      "clean_name": "L2169",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L2247",
+      "prefix": "loyalty",
+      "clean_name": "L2247",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L2343",
+      "prefix": "loyalty",
+      "clean_name": "L2343",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L2459",
+      "prefix": "loyalty",
+      "clean_name": "L2459",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L2490",
+      "prefix": "loyalty",
+      "clean_name": "L2490",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L2769",
+      "prefix": "loyalty",
+      "clean_name": "L2769",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L3014",
+      "prefix": "loyalty",
+      "clean_name": "L3014",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L3191",
+      "prefix": "loyalty",
+      "clean_name": "L3191",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L3259",
+      "prefix": "loyalty",
+      "clean_name": "L3259",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L3288",
+      "prefix": "loyalty",
+      "clean_name": "L3288",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L3295",
+      "prefix": "loyalty",
+      "clean_name": "L3295",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L3317",
+      "prefix": "loyalty",
+      "clean_name": "L3317",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L3366",
+      "prefix": "loyalty",
+      "clean_name": "L3366",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L3572",
+      "prefix": "loyalty",
+      "clean_name": "L3572",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L3800",
+      "prefix": "loyalty",
+      "clean_name": "L3800",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L4034",
+      "prefix": "loyalty",
+      "clean_name": "L4034",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L4063",
+      "prefix": "loyalty",
+      "clean_name": "L4063",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L4149",
+      "prefix": "loyalty",
+      "clean_name": "L4149",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L4164",
+      "prefix": "loyalty",
+      "clean_name": "L4164",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L4424",
+      "prefix": "loyalty",
+      "clean_name": "L4424",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L5224",
+      "prefix": "loyalty",
+      "clean_name": "L5224",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L5259",
+      "prefix": "loyalty",
+      "clean_name": "L5259",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L5485",
+      "prefix": "loyalty",
+      "clean_name": "L5485",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L5553",
+      "prefix": "loyalty",
+      "clean_name": "L5553",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L5756",
+      "prefix": "loyalty",
+      "clean_name": "L5756",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L5777",
+      "prefix": "loyalty",
+      "clean_name": "L5777",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L5924",
+      "prefix": "loyalty",
+      "clean_name": "L5924",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L5947",
+      "prefix": "loyalty",
+      "clean_name": "L5947",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L6110",
+      "prefix": "loyalty",
+      "clean_name": "L6110",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L6119",
+      "prefix": "loyalty",
+      "clean_name": "L6119",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L6267",
+      "prefix": "loyalty",
+      "clean_name": "L6267",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L6417",
+      "prefix": "loyalty",
+      "clean_name": "L6417",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L6544",
+      "prefix": "loyalty",
+      "clean_name": "L6544",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L6886",
+      "prefix": "loyalty",
+      "clean_name": "L6886",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L7291",
+      "prefix": "loyalty",
+      "clean_name": "L7291",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L7761",
+      "prefix": "loyalty",
+      "clean_name": "L7761",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L7783",
+      "prefix": "loyalty",
+      "clean_name": "L7783",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L7814",
+      "prefix": "loyalty",
+      "clean_name": "L7814",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L8012",
+      "prefix": "loyalty",
+      "clean_name": "L8012",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L8148",
+      "prefix": "loyalty",
+      "clean_name": "L8148",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L8328",
+      "prefix": "loyalty",
+      "clean_name": "L8328",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L8477",
+      "prefix": "loyalty",
+      "clean_name": "L8477",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L8566",
+      "prefix": "loyalty",
+      "clean_name": "L8566",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L9018",
+      "prefix": "loyalty",
+      "clean_name": "L9018",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L9254",
+      "prefix": "loyalty",
+      "clean_name": "L9254",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L9362",
+      "prefix": "loyalty",
+      "clean_name": "L9362",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L9363",
+      "prefix": "loyalty",
+      "clean_name": "L9363",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L9406",
+      "prefix": "loyalty",
+      "clean_name": "L9406",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L9633",
+      "prefix": "loyalty",
+      "clean_name": "L9633",
+      "card_type": "loyalty"
+    },
+    {
+      "name": "loyalty_L9637",
+      "prefix": "loyalty",
+      "clean_name": "L9637",
+      "card_type": "loyalty"
+    }
+  ],
+  "links": [
+    {
+      "source": 16,
+      "target": 34,
+      "value": 24,
+      "type": "car_cc"
+    },
+    {
+      "source": 20,
+      "target": 35,
+      "value": 29,
+      "type": "car_cc"
+    },
+    {
+      "source": 20,
+      "target": 39,
+      "value": 17,
+      "type": "car_cc"
+    },
+    {
+      "source": 7,
+      "target": 36,
+      "value": 20,
+      "type": "car_cc"
+    },
+    {
+      "source": 14,
+      "target": 37,
+      "value": 22,
+      "type": "car_cc"
+    },
+    {
+      "source": 14,
+      "target": 42,
+      "value": 17,
+      "type": "car_cc"
+    },
+    {
+      "source": 14,
+      "target": 57,
+      "value": 18,
+      "type": "car_cc"
+    },
+    {
+      "source": 14,
+      "target": 77,
+      "value": 20,
+      "type": "car_cc"
+    },
+    {
+      "source": 13,
+      "target": 38,
+      "value": 21,
+      "type": "car_cc"
+    },
+    {
+      "source": 13,
+      "target": 49,
+      "value": 13,
+      "type": "car_cc"
+    },
+    {
+      "source": 13,
+      "target": 61,
+      "value": 21,
+      "type": "car_cc"
+    },
+    {
+      "source": 19,
+      "target": 40,
+      "value": 21,
+      "type": "car_cc"
+    },
+    {
+      "source": 19,
+      "target": 55,
+      "value": 3,
+      "type": "car_cc"
+    },
+    {
+      "source": 5,
+      "target": 41,
+      "value": 7,
+      "type": "car_cc"
+    },
+    {
+      "source": 5,
+      "target": 79,
+      "value": 2,
+      "type": "car_cc"
+    },
+    {
+      "source": 28,
+      "target": 43,
+      "value": 23,
+      "type": "car_cc"
+    },
+    {
+      "source": 32,
+      "target": 44,
+      "value": 24,
+      "type": "car_cc"
+    },
+    {
+      "source": 23,
+      "target": 45,
+      "value": 19,
+      "type": "car_cc"
+    },
+    {
+      "source": 17,
+      "target": 46,
+      "value": 23,
+      "type": "car_cc"
+    },
+    {
+      "source": 21,
+      "target": 47,
+      "value": 26,
+      "type": "car_cc"
+    },
+    {
+      "source": 21,
+      "target": 54,
+      "value": 20,
+      "type": "car_cc"
+    },
+    {
+      "source": 2,
+      "target": 48,
+      "value": 9,
+      "type": "car_cc"
+    },
+    {
+      "source": 2,
+      "target": 80,
+      "value": 8,
+      "type": "car_cc"
+    },
+    {
+      "source": 2,
+      "target": 84,
+      "value": 3,
+      "type": "car_cc"
+    },
+    {
+      "source": 10,
+      "target": 50,
+      "value": 21,
+      "type": "car_cc"
+    },
+    {
+      "source": 18,
+      "target": 51,
+      "value": 24,
+      "type": "car_cc"
+    },
+    {
+      "source": 9,
+      "target": 52,
+      "value": 5,
+      "type": "car_cc"
+    },
+    {
+      "source": 9,
+      "target": 71,
+      "value": 24,
+      "type": "car_cc"
+    },
+    {
+      "source": 27,
+      "target": 53,
+      "value": 22,
+      "type": "car_cc"
+    },
+    {
+      "source": 27,
+      "target": 65,
+      "value": 13,
+      "type": "car_cc"
+    },
+    {
+      "source": 33,
+      "target": 56,
+      "value": 22,
+      "type": "car_cc"
+    },
+    {
+      "source": 33,
+      "target": 72,
+      "value": 25,
+      "type": "car_cc"
+    },
+    {
+      "source": 22,
+      "target": 58,
+      "value": 11,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 59,
+      "value": 20,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 67,
+      "value": 21,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 75,
+      "value": 19,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 83,
+      "value": 21,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 89,
+      "value": 28,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 90,
+      "value": 31,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 91,
+      "value": 30,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 92,
+      "value": 35,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 93,
+      "value": 33,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 94,
+      "value": 32,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 95,
+      "value": 29,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 96,
+      "value": 6,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 97,
+      "value": 36,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 98,
+      "value": 15,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 99,
+      "value": 27,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 100,
+      "value": 29,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 101,
+      "value": 27,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 102,
+      "value": 31,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 103,
+      "value": 15,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 104,
+      "value": 12,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 105,
+      "value": 35,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 106,
+      "value": 16,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 107,
+      "value": 33,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 108,
+      "value": 27,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 109,
+      "value": 11,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 110,
+      "value": 26,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 111,
+      "value": 31,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 112,
+      "value": 30,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 113,
+      "value": 28,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 114,
+      "value": 30,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 115,
+      "value": 3,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 116,
+      "value": 30,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 117,
+      "value": 24,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 118,
+      "value": 27,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 119,
+      "value": 3,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 120,
+      "value": 32,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 121,
+      "value": 29,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 122,
+      "value": 28,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 123,
+      "value": 55,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 124,
+      "value": 31,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 125,
+      "value": 26,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 126,
+      "value": 32,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 127,
+      "value": 26,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 128,
+      "value": 11,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 129,
+      "value": 28,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 130,
+      "value": 25,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 131,
+      "value": 23,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 132,
+      "value": 27,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 133,
+      "value": 26,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 134,
+      "value": 11,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 135,
+      "value": 31,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 136,
+      "value": 28,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 137,
+      "value": 31,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 138,
+      "value": 21,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 139,
+      "value": 31,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 140,
+      "value": 26,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 141,
+      "value": 18,
+      "type": "car_cc"
+    },
+    {
+      "source": 0,
+      "target": 142,
+      "value": 26,
+      "type": "car_cc"
+    },
+    {
+      "source": 1,
+      "target": 60,
+      "value": 21,
+      "type": "car_cc"
+    },
+    {
+      "source": 1,
+      "target": 76,
+      "value": 32,
+      "type": "car_cc"
+    },
+    {
+      "source": 1,
+      "target": 81,
+      "value": 14,
+      "type": "car_cc"
+    },
+    {
+      "source": 1,
+      "target": 86,
+      "value": 20,
+      "type": "car_cc"
+    },
+    {
+      "source": 30,
+      "target": 62,
+      "value": 23,
+      "type": "car_cc"
+    },
+    {
+      "source": 24,
+      "target": 63,
+      "value": 24,
+      "type": "car_cc"
+    },
+    {
+      "source": 8,
+      "target": 64,
+      "value": 20,
+      "type": "car_cc"
+    },
+    {
+      "source": 31,
+      "target": 66,
+      "value": 21,
+      "type": "car_cc"
+    },
+    {
+      "source": 11,
+      "target": 68,
+      "value": 23,
+      "type": "car_cc"
+    },
+    {
+      "source": 29,
+      "target": 69,
+      "value": 22,
+      "type": "car_cc"
+    },
+    {
+      "source": 4,
+      "target": 70,
+      "value": 19,
+      "type": "car_cc"
+    },
+    {
+      "source": 12,
+      "target": 73,
+      "value": 19,
+      "type": "car_cc"
+    },
+    {
+      "source": 12,
+      "target": 85,
+      "value": 23,
+      "type": "car_cc"
+    },
+    {
+      "source": 25,
+      "target": 74,
+      "value": 32,
+      "type": "car_cc"
+    },
+    {
+      "source": 3,
+      "target": 78,
+      "value": 8,
+      "type": "car_cc"
+    },
+    {
+      "source": 15,
+      "target": 82,
+      "value": 22,
+      "type": "car_cc"
+    },
+    {
+      "source": 26,
+      "target": 87,
+      "value": 20,
+      "type": "car_cc"
+    },
+    {
+      "source": 6,
+      "target": 88,
+      "value": 15,
+      "type": "car_cc"
+    },
+    {
+      "source": 80,
+      "target": 163,
+      "value": 10,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 78,
+      "target": 152,
+      "value": 14,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 69,
+      "target": 165,
+      "value": 25,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 69,
+      "target": 146,
+      "value": 1,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 69,
+      "target": 191,
+      "value": 1,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 34,
+      "target": 156,
+      "value": 15,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 34,
+      "target": 160,
+      "value": 16,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 82,
+      "target": 155,
+      "value": 27,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 83,
+      "target": 172,
+      "value": 18,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 51,
+      "target": 147,
+      "value": 31,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 51,
+      "target": 196,
+      "value": 1,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 37,
+      "target": 183,
+      "value": 26,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 37,
+      "target": 159,
+      "value": 1,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 86,
+      "target": 154,
+      "value": 28,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 39,
+      "target": 153,
+      "value": 23,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 36,
+      "target": 164,
+      "value": 26,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 61,
+      "target": 159,
+      "value": 29,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 61,
+      "target": 183,
+      "value": 1,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 53,
+      "target": 189,
+      "value": 28,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 53,
+      "target": 146,
+      "value": 1,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 53,
+      "target": 193,
+      "value": 1,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 60,
+      "target": 186,
+      "value": 25,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 68,
+      "target": 161,
+      "value": 31,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 56,
+      "target": 148,
+      "value": 31,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 56,
+      "target": 176,
+      "value": 1,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 54,
+      "target": 194,
+      "value": 24,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 54,
+      "target": 157,
+      "value": 1,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 54,
+      "target": 165,
+      "value": 1,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 87,
+      "target": 181,
+      "value": 24,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 87,
+      "target": 194,
+      "value": 1,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 46,
+      "target": 151,
+      "value": 34,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 71,
+      "target": 168,
+      "value": 30,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 57,
+      "target": 162,
+      "value": 24,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 50,
+      "target": 144,
+      "value": 29,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 63,
+      "target": 193,
+      "value": 30,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 63,
+      "target": 144,
+      "value": 1,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 77,
+      "target": 175,
+      "value": 29,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 75,
+      "target": 149,
+      "value": 29,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 75,
+      "target": 181,
+      "value": 1,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 44,
+      "target": 174,
+      "value": 28,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 76,
+      "target": 146,
+      "value": 29,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 76,
+      "target": 189,
+      "value": 1,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 58,
+      "target": 157,
+      "value": 13,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 58,
+      "target": 194,
+      "value": 1,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 40,
+      "target": 196,
+      "value": 25,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 66,
+      "target": 145,
+      "value": 26,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 72,
+      "target": 176,
+      "value": 25,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 72,
+      "target": 148,
+      "value": 1,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 47,
+      "target": 184,
+      "value": 24,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 35,
+      "target": 185,
+      "value": 23,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 35,
+      "target": 192,
+      "value": 1,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 35,
+      "target": 172,
+      "value": 1,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 85,
+      "target": 170,
+      "value": 29,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 73,
+      "target": 187,
+      "value": 25,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 73,
+      "target": 177,
+      "value": 1,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 38,
+      "target": 166,
+      "value": 29,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 59,
+      "target": 177,
+      "value": 22,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 45,
+      "target": 143,
+      "value": 27,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 65,
+      "target": 178,
+      "value": 30,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 62,
+      "target": 177,
+      "value": 26,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 81,
+      "target": 156,
+      "value": 16,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 43,
+      "target": 180,
+      "value": 30,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 88,
+      "target": 195,
+      "value": 17,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 67,
+      "target": 191,
+      "value": 29,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 48,
+      "target": 182,
+      "value": 10,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 41,
+      "target": 158,
+      "value": 11,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 42,
+      "target": 190,
+      "value": 25,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 42,
+      "target": 177,
+      "value": 1,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 74,
+      "target": 167,
+      "value": 27,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 64,
+      "target": 179,
+      "value": 24,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 52,
+      "target": 188,
+      "value": 10,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 70,
+      "target": 171,
+      "value": 22,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 79,
+      "target": 169,
+      "value": 3,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 84,
+      "target": 173,
+      "value": 3,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 49,
+      "target": 192,
+      "value": 18,
+      "type": "cc_loyalty"
+    },
+    {
+      "source": 55,
+      "target": 150,
+      "value": 5,
+      "type": "cc_loyalty"
+    }
+  ]
+}
