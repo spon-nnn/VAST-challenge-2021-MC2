@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import sys,base64; data=sys.stdin.read\\(\\); open\\('/tmp/prob.b64','w'\\).write\\(data\\)\")",
+      "Read(//tmp/**)",
+      "Bash(python3 *)"
+    ]
+  }
+}
