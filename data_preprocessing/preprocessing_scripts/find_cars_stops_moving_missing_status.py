@@ -90,12 +90,14 @@ def process(gps, zones):
                     name = _zone_lookup(float(row['lat']), float(row['long']), zones)
                     by_time.setdefault(d, {}).setdefault(h, {}).setdefault(m, {}).setdefault(vid, [])
                     by_time[d][h][m][vid].append({**row.to_dict(), 'location': name})
-                    stops.append({'car_id': vid, 'lat': row['lat'], 'long': row['long'],
-                                  'Timestamp': row['Timestamp'], 'location': name})
+                    stops.append({'car_id': vid, 'location': name,
+                                  'Timestamp': row['Timestamp'],
+                                  'lat': row['lat'], 'long': row['long']})
                 elif kind == 'missing':
                     name = _zone_lookup(float(row['lat']), float(row['long']), zones)
-                    gaps.append({'car_id': vid, 'lat': row['lat'], 'long': row['long'],
-                                 'Timestamp': row['Timestamp'], 'location': name})
+                    gaps.append({'car_id': vid, 'location': name,
+                                 'Timestamp': row['Timestamp'],
+                                 'lat': row['lat'], 'long': row['long']})
 
                 acc_secs = acc_km = 0.0
 

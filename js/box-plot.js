@@ -33,12 +33,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   d3.csv("data/charts/cc_data.csv").then(raw => {
     const stats = d3.rollup(raw, vals => {
-      const sorted = vals.map(r => +r.price).sort(d3.ascending);
+      const sorted = vals.map(r => +r.amount).sort(d3.ascending);
       const q1  = d3.quantile(sorted, 0.25);
       const med = d3.quantile(sorted, 0.5);
       const q3  = d3.quantile(sorted, 0.75);
       return { q1, med, q3, lo: d3.quantile(sorted, 0), hi: d3.quantile(sorted, 1) };
-    }, r => r.location);
+    }, r => r.venue);
 
     const xBand = d3.scaleBand()
       .domain(LOC_DOMAIN).range([0, BP.inner_w])
@@ -106,15 +106,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const JITTER = 20;
     root.selectAll(".dot").data(raw).join("circle")
       .attr("class", "box_circles")
-      .attr("id", d => "box_" + location_index[d.location])
-      .attr("cx", d => xBand(d.location) - JITTER / 2 + Math.random() * JITTER)
-      .attr("cy", d => yLog(d.price))
+      .attr("id", d => "box_" + location_index[d.venue])
+      .attr("cx", d => xBand(d.venue) - JITTER / 2 + Math.random() * JITTER)
+      .attr("cy", d => yLog(d.amount))
       .attr("r", 2.5)
       .attr("fill", BP.dotClr).attr("fill-opacity", 0.55)
       .attr("stroke", "none")
       .on("mousemove", (ev, d) => {
         tip.style("opacity", 1)
-          .html(`Price: ${d.price}<br>Location: ${d.location}<br>Time: ${d.timestamp}<br>CC: ${d.last4ccnum}`)
+          .html(`Price: ${d.amount}<br>Location: ${d.venue}<br>Time: ${d.ts}<br>CC: ${d.cc4}`)
           .style("left", ev.clientX + window.scrollX + 18 + "px")
           .style("top",  ev.clientY + window.scrollY - 18 + "px");
       })

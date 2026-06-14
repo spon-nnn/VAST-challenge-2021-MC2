@@ -36,11 +36,11 @@ const LOC_CATEGORY = {
 
 document.addEventListener('DOMContentLoaded', () => {
   Promise.all([d3.csv('data/charts/cctime_data.csv', d => ({
-    date: d.date,
-    price: +d.price,
-    last4ccnum: +d.last4ccnum,
-    location: d.location,
-    time: d.time
+    date: d.day,
+    price: +d.amount,
+    last4ccnum: +d.cc4,
+    location: d.venue,
+    time: d.clock
   }))]).then(([rows]) => {
     ringdata = rows;
     ringwidth = 750; ringheight = 750;

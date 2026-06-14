@@ -51,7 +51,7 @@ def _merge_loyalty(vehicle_cc, loyalty_rows):
         cap = max(MIN_FREQ, max(cc_map.values(), default=1))
         for cc_id, freq in cc_map.items():
             if freq >= min(MIN_FREQ, cap):
-                linked.append({"cc_num": vid, "loyalty_num": cc_id, "frequency": freq})
+                linked.append({"loyalty_num": cc_id, "cc_num": vid, "frequency": freq})
                 cc_in_cars.add(int(cc_id))
 
     freq_count = defaultdict(int)

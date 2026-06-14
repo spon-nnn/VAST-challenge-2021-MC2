@@ -1,4 +1,4 @@
-cc_num,loyalty_num,frequency
+from_id,to_id,weight
 18,7108,7
 18,3492,7
 14,3492,8

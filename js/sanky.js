@@ -41,9 +41,9 @@ function buildSankeyPanel(svgId, rows) {
   }
   rows.forEach(r => {
     graph.links.push({
-      source: nodeId(r.cc_num, "cc"),
-      target: nodeId(r.loyalty_num, "loyalty"),
-      value: +r.frequency
+      source: nodeId(r.from_id, "cc"),
+      target: nodeId(r.to_id, "loyalty"),
+      value: +r.weight
     });
   });
 

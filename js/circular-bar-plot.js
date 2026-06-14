@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function handleBarClick(event, d) {
-  const loc = d.location;
+  const loc = d.venue;
   const sel = d3.select("#dropdownloc");
 
   if (activeBar === event.target.id) {
@@ -63,7 +63,7 @@ function buildCircularChart(rows) {
 
   const angleScale = d3.scaleBand()
     .range([0, 2 * Math.PI]).align(0)
-    .domain(rows.map(d => d.location));
+    .domain(rows.map(d => d.venue));
 
   const radCC = d3.scaleRadial()
     .range([INNER_R, OUTER_R]).domain([2, 220]);
@@ -79,21 +79,21 @@ function buildCircularChart(rows) {
 
   const arcCC = d3.arc()
     .innerRadius(INNER_R)
-    .outerRadius(d => radCC(d.cc_count))
-    .startAngle(d => angleScale(d.location))
-    .endAngle(d => angleScale(d.location) + angleScale.bandwidth())
+    .outerRadius(d => radCC(d.cc_n))
+    .startAngle(d => angleScale(d.venue))
+    .endAngle(d => angleScale(d.venue) + angleScale.bandwidth())
     .padAngle(0.01).padRadius(INNER_R);
 
   svg.selectAll(".cc_bars").data(rows).join("path")
     .attr("class", "cc_bars")
-    .attr("id", d => "bar_" + location_index[d.location])
+    .attr("id", d => "bar_" + location_index[d.venue])
     .attr("fill", CLR_CC).style("opacity", 0.75)
     .style("stroke", "#1e1e2e").style("stroke-width", 1)
     .attr("d", arcCC)
     .on("mouseover", (_, d) => tip.style("opacity", 1))
     .on("mouseout",  ()    => tip.html("").style("opacity", 0))
     .on("mousemove", (ev, d) => {
-      tip.html(`Transactions: ${d.cc_count}<br>Location: ${d.location}`)
+      tip.html(`Transactions: ${d.cc_n}<br>Location: ${d.venue}`)
         .style("left", ev.clientX + window.scrollX + 18 + "px")
         .style("top",  ev.clientY + window.scrollY - 18 + "px");
     })
@@ -101,30 +101,30 @@ function buildCircularChart(rows) {
 
   // Location labels
   svg.selectAll(".loc-label").data(rows).join("g")
-    .attr("text-anchor", d => (angleScale(d.location) + angleScale.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "end" : "start")
-    .attr("transform", d => `rotate(${(angleScale(d.location) + angleScale.bandwidth() / 2) * 180 / Math.PI - 90})translate(${radCC(d.cc_count) + 10},0)`)
+    .attr("text-anchor", d => (angleScale(d.venue) + angleScale.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "end" : "start")
+    .attr("transform", d => `rotate(${(angleScale(d.venue) + angleScale.bandwidth() / 2) * 180 / Math.PI - 90})translate(${radCC(d.cc_n) + 10},0)`)
     .append("text")
-    .text(d => d.location)
-    .attr("transform", d => (angleScale(d.location) + angleScale.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "rotate(180)" : "rotate(0)")
+    .text(d => d.venue)
+    .attr("transform", d => (angleScale(d.venue) + angleScale.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "rotate(180)" : "rotate(0)")
     .style("font-size", "12px").attr("fill", "#a0a0c8").attr("dominant-baseline", "middle");
 
   const arcLoy = d3.arc()
     .innerRadius(d => radLoy(0))
-    .outerRadius(d => radLoy(d.loyalty_count))
-    .startAngle(d => angleScale(d.location))
-    .endAngle(d => angleScale(d.location) + angleScale.bandwidth())
+    .outerRadius(d => radLoy(d.loyal_n))
+    .startAngle(d => angleScale(d.venue))
+    .endAngle(d => angleScale(d.venue) + angleScale.bandwidth())
     .padAngle(0.01).padRadius(INNER_R);
 
   svg.selectAll(".lc_bars").data(rows).join("path")
     .attr("class", "lc_bars")
-    .attr("id", d => "bar_u" + location_index[d.location])
+    .attr("id", d => "bar_u" + location_index[d.venue])
     .attr("fill", CLR_LOYAL).style("opacity", 0.75)
     .style("stroke", "#1e1e2e").style("stroke-width", 1)
     .attr("d", arcLoy)
     .on("mouseover", (_, d) => tip.style("opacity", 1))
     .on("mouseout",  ()    => tip.html("").style("opacity", 0))
     .on("mousemove", (ev, d) => {
-      tip.html(`Transactions: ${d.loyalty_count}<br>Location: ${d.location}`)
+      tip.html(`Transactions: ${d.loyal_n}<br>Location: ${d.venue}`)
         .style("left", ev.clientX + window.scrollX + 18 + "px")
         .style("top",  ev.clientY + window.scrollY - 18 + "px");
     });

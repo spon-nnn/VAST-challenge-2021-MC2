@@ -23,7 +23,7 @@ def _build_graph(stops, crew):
     emp_types = list(crew['CurrentEmploymentType'])
     grp = {t: i + 1 for i, t in enumerate(set(emp_types))}
 
-    vehicles = sorted(stops['car_id'].unique())
+    vehicles = sorted(int(v) for v in stops['car_id'].unique())
     places   = sorted(stops['location'].unique())
 
     idx  = {}
